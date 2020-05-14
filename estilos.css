@@ -7,3 +7,53 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+header{
+  background:#52CEC8;
+  height: auto;
+  padding: 48px;
+  width: 100%;
+}
+.container{
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+}
+
+img{
+  display: block;
+  height: 480px;
+  object-fit: cover;
+  width: auto;
+}
+
+.textos{
+  width: 50%;
+  color: #fff;
+}
+
+.textos h1, h2{
+  font-size: 60px;
+}
+
+.textos a{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  width: 150px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.wave{
+  height: 100px;
+  width: 100%;
+  background: #52cec8;
+}
