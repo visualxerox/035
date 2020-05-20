@@ -4,10 +4,15 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* Sección 1 Header */
 header{
   background:#52CEC8;
   height: auto;
@@ -56,4 +61,173 @@ img{
   height: 100px;
   width: 100%;
   background: #52cec8;
+}
+
+/* Estilos generales */
+.wave-contenedor,
+.contenedor{
+  /* width: 90%; */
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+}
+
+.contenedor{
+  padding: 40px 0;
+}
+
+.titulo{
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Sección 2 Diagnostico */
+.wave-contenedor{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.wave-contenedor img{
+  width: 50%;
+  height: auto;
+}
+
+.contenedor-textos{
+  width: 45%;
+}
+
+.parrafo{
+  text-align:justify;
+  margin-bottom: 20px;
+  /* font-size: 23px; */
+}
+
+.box{
+  margin: 20px 0;
+}
+
+.box h1{
+  font-size: 18px;
+  background: #f2f2f2;
+  width: 450px;
+  border-radius: 6px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.box i{
+  color: #52CEC8;
+  font-size: 23px;
+}
+
+/* Sección 3 video */
+  .video{
+    padding: 0 0 40px 0;
+  }
+/* Sección 4 Caracteristicas */
+
+.cards{
+  background:#52CEC8;
+}
+
+.cards .contenedor>h3{
+  color: #fff;
+}
+
+.content-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 30%;
+  text-align: center;
+  height: 150px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+  transform: scale(1);
+  transition: transform 0.6s;
+  border-radius: 8px;
+  margin: 10px;
+  background:#fff;
+}
+
+.card:hover{
+  box-shadow: 0 0 6px 0 rgba(0,0,0, .5);
+  transform: scale(1.03);
+}
+
+.card i{
+  margin: 30px 0 20px 0;
+  color: #52CEC8;
+  font-size: 50px;
+}
+
+.card p{
+  font-weight: 300;
+  
+}
+
+/* Sección 5 Precios */
+
+.table{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Sección Footer */
+
+footer{
+  background: #52CEC8;
+  color: #fff;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input{
+  background: transparent;
+  border: 0;
+  color: #fff;
+  outline: none;
+  border: 2px solid #fff ;
+  padding: 20px 10px;
+}
+
+.input::placeholder{
+  color: #fff;
+  font-family: 'roboto', 'sans-serif';
+}
+
+input[type='text'],
+input[type='email']{
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 30px;
+}
+
+.form textarea{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type='submit']{
+  width: 120px;
+  text-align: center;
+  padding: 14px 0;
+}
+
+input[type='submit']:hover{
+  cursor: pointer;
+  color: #52CEC8;
+  background: #fff;
+
 }
